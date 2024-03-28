@@ -1,0 +1,223 @@
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.countdown-item {
+    font-size: 10px;
+    border-radius: 30%;
+    text-align: center;
+    width:70px;
+    height: 100px;
+    line-height: 55px;
+    padding: 10px; /* Adjust padding for inner spacing if needed */
+    position: relative;
+    opacity: 0;
+    margin: 5px;
+    color: #fff;
+}
+
+.countdown-item.show {
+    animation: fadein 2s forwards;
+}
+
+.countdown-item::before {
+    position: absolute;
+    content: ' ';
+    width: 70px;
+    height: 70px;
+    border-radius: 30%;
+    background-color: #ffffff;
+    left: 0;
+    top: 0;
+    opacity: .2;
+}
+
+.countdown-item.years {
+    animation-delay: 1s;
+}
+
+.countdown-item.days {
+    animation-delay: 1.5s;
+}
+
+.countdown-item.hours {
+    animation-delay: 2s;
+}
+
+.countdown-item.minutes {
+    animation-delay: 2.5s;
+}
+
+.countdown-item.seconds {
+    animation-delay: 3s;
+}
+
+.countdown-item::after {
+    
+    position: absolute;
+    content: "";
+    bottom: 15px; /* Adjust this value to position the labels correctly */
+    left: 35px;
+    transform: translateX(-50%);
+    font-size: 13px; /* Adjust the font size as needed */
+}
+
+.countdown-item.days::after {
+    content: " Days"; /* Replace " Days" with any label you want */
+}
+
+.countdown-item.hours::after {
+    content: " Hours"; /* Replace " Hours" with any label you want */
+}
+
+.countdown-item.minutes::after {
+    content: " Minutes"; /* Replace " Minutes" with any label you want */
+}
+
+.countdown-item.seconds::after {
+    content: " Seconds"; /* Replace " Seconds" with any label you want */
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px; /* Optional: Add margin bottom for spacing */
+  }
+  .map-container iframe {
+    width: calc(500px); /* Adjust width based on desired spacing */
+    height: 400px; /* Adjust height as needed */
+
+  }
+  .map-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #cb40b9; /* Bright color */
+    font-family: 'georgia',serif;/* Example of a different font */
+    font-size: 20px; /* Adjust font size as needed */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+
+  }
+
+
+  
+
+  .forever {
+    color: gold; /* Adjust color as desired */
+    font-style: italic;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add subtle shadow */
+}
+
+
+
+.logo-container {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 50px; /* Adjust top margin as needed */
+  }
+
+  .logo-image {
+    max-width: 200px; /* Adjust the maximum width of the logo */
+    max-height: 200px; /* Adjust the maximum height of the logo */
+  }
+
+
+  @keyframes fadein {
+    from { 
+      opacity: 0;
+      font-size: 10px; /* Start at 10px font size */
+    }
+    to { 
+      opacity: 1;
+      font-size: 20px; /* End at 20px font size */
+    }
+  }
+  
+
+
+
+@media only screen and (max-width: 648px) {
+    #countdown {
+        display: flex;
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        justify-content: center;
+    }
+    
+    .countdown-item {
+        margin: 5px; /* Adjust margin as needed */
+
+    }
+}
+
+
+#fh5co-couple {
+    background-image: url('BG-4.jpg'); /* Replace 'path/to/your/background/image.jpg' with the actual path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+
+
+
+@media only screen and (max-width: 600px) {
+    .map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .map-item {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .video-container {
+        width: 100%;
+        
+        
+    }
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set container height to occupy full height */
+}
+
+.video-container object {
+    display: block;
+    max-width: 100%; /* Ensure video doesn't exceed container width */
+    max-height: 100%; /* Ensure video doesn't exceed container height */
+}
+
+
+.centered-text {
+    text-align: center; /* Center the text horizontally */
+    font-family: 'Brush Script MT', cursive; /* Change the font */
+    font-size: 30px; /* Adjust font size as needed */
+    text-shadow: 2 0 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+  }
+
+@media (max-width: 767px) {
+    /* Adjust video size for screens up to 767px wide (typically mobile devices) */
+    .video-container object {
+        width: 767px; /* Adjust width for mobile screens */
+        max-width: 80%; /* Ensure video doesn't exceed screen width */
+        min-height: 500px; /* Minimum height for the video on mobile screens */
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    /* Adjust video size for screens 768px wide and above (PCs, laptops, etc.) */
+    .video-container object {
+        min-height: 400px; /* Minimum height for the video on larger screens */
+    }
+}
