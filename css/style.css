@@ -368,7 +368,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #98077e;
+  color: #f4eded;
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
@@ -1068,9 +1068,11 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  font-family: MyFont1;
+  color: #ffffff;
   font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+
 }
 .couple-half .groom, .couple-half .bride {
   float: left;
@@ -1170,7 +1172,7 @@ form label {
 .feature-center h3 {
   text-transform: uppercase;
   font-size: 18px;
-  color: #5d5d5d;
+  color: #efefef;
 }
 
 .fh5co-heading {
@@ -1180,12 +1182,11 @@ form label {
   margin-bottom: 2em;
 }
 .fh5co-heading h2 {
-  font-size: 60px;
+  font-size: 40px;
   margin-bottom: 10px;
-  line-height: 1.5;
-  font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  line-height: 0.9;
+  color: #efe6ea;
+  font-family: MyFont3;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
@@ -1194,8 +1195,8 @@ form label {
 }
 .fh5co-heading p {
   font-size: 18px;
-  line-height: 1.5;
-  color: #828282;
+  line-height: 0.5;
+  color: #d3c5c5;
 }
 .fh5co-heading span {
   text-transform: uppercase;

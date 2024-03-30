@@ -1,3 +1,34 @@
+@font-face {
+    font-family: MyFont;
+    src: url(font.ttf);
+}
+
+
+@font-face {
+    font-family: MyFont1;
+    src: url(KaushanScript-Regular.otf);
+}
+
+@font-face {
+    font-family: MyFont2;
+    src: url(Rastefani.ttf);
+}
+
+@font-face {
+    font-family: MyFont3;
+    src: url(RomanSD.ttf);
+}
+
+@font-face {
+    font-family: Mugurtham;
+    src: url(Attera.ttf);
+}
+
+@font-face {
+    font-family: SaveDate;
+    src: url(AngeliaBeauty.ttf);
+}
+
 
 #countdown {
     display: flex;
@@ -97,7 +128,7 @@
   .map-title {
     text-align: center;
     margin-bottom: 10px;
-    color: #cb40b9; /* Bright color */
+    color: #e1d3df; /* Bright color */
     font-family: 'georgia',serif;/* Example of a different font */
     font-size: 20px; /* Adjust font size as needed */
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
@@ -155,7 +186,7 @@
 
 
 #fh5co-couple {
-    background-image: url('BG-4.jpg'); /* Replace 'path/to/your/background/image.jpg' with the actual path to your image */
+    background-image: url('groombridename.jpg'); /* Replace 'path/to/your/background/image.jpg' with the actual path to your image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -199,12 +230,16 @@
 
 .centered-text {
     text-align: center; /* Center the text horizontally */
-    font-family: 'Brush Script MT', cursive; /* Change the font */
-    font-size: 30px; /* Adjust font size as needed */
-    text-shadow: 2 0 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
-  }
+    font-family: mugurtham;
+    color: white; /* Set font color to white */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Add shadow with offset x = 2px, offset y = 2px, blur radius = 4px, and color with 50% opacity */
+    font-size: 130%;
 
-@media (max-width: 767px) {
+}
+
+
+
+@media (max-width: 400px) {
     /* Adjust video size for screens up to 767px wide (typically mobile devices) */
     .video-container object {
         width: 767px; /* Adjust width for mobile screens */
@@ -215,9 +250,34 @@
 
 
 
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
     /* Adjust video size for screens 768px wide and above (PCs, laptops, etc.) */
     .video-container object {
         min-height: 400px; /* Minimum height for the video on larger screens */
+    }
+}
+
+
+
+
+p {
+    color: #d8d8d8; /* Change font color to red (you can replace #ff0000 with your desired color code) */
+    font-family: Arial, sans-serif; /* Change font family if needed */
+    font-size: 16px; /* Change font size if needed */
+    /* Add any other styles as needed */
+  }
+
+  .logo-image {
+    width: 100px;
+    height: auto;
+    float: right; /* Adjust the image to the right */
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 300px) {
+    .logo-image {
+        float: none; /* Reset float for smaller screens */
+        display: block; /* Make the image a block element */
+        margin: 0 auto; /* Center the image horizontally */
     }
 }
